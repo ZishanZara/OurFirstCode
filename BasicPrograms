@@ -1,0 +1,30 @@
+Scanner sc = new Scanner(System.in);
+        System.out.println("Enter English Marks");
+        float English = sc.nextFloat();
+        if(English<33){
+            System.out.println("Fail");}
+        System.out.println("Enter Hindi Marks");
+        float Hindi = sc.nextFloat();
+        if(Hindi<33){
+            System.out.println("Fail");}
+        System.out.println("Enter Maths Marks");
+        float Maths = sc.nextFloat();
+        if(Maths<33){
+            System.out.println("Fail");}
+        System.out.println("Enter Science Marks");
+        float Science = sc.nextFloat();
+        if(Science<33){
+            System.out.println("Fail");}
+        System.out.println("Enter Social Science Marks");
+        float SocialScience = sc.nextFloat();
+        if(SocialScience<33){
+            System.out.println("Fail");}
+
+        float Total = English + Hindi + Maths + Science + SocialScience;
+        float Percentage = Total/500 *100;
+        System.out.println(Percentage);
+
+        if(Percentage>33){
+            System.out.println("Congrats You Have Passed");}
+        else{
+            System.out.println("Sorry You Failed");}
